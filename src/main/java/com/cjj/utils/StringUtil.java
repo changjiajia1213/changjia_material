@@ -44,7 +44,7 @@ public class StringUtil {
 
 	// 验证手机号码
 	public static boolean isPhone(String str) {
-		// 正则 1 3456789 [abc]
+		// 正则1 3456789 [abc]
 		String reg_str = "^1[3-9]\\d{9}$";
 		boolean matches = str.matches(reg_str);
 		return matches;
