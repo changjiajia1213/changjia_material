@@ -9,7 +9,7 @@ package com.cjj.utils;
 public class StringUtil {
 	// 判断是否是数字
 	public static boolean isNumber(String str) {
-		String reg_str =  "^([1-9][0-9]*)|((([0-9])|([1-9]\\d+))\\.\\d)$";
+		String reg_str = "^([1-9][0-9]*)|((([0-9])|([1-9]\\d+))\\.\\d)$";
 		boolean matches = str.matches(reg_str);
 		return matches;
 	}
