@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class DateUtil {
 
-	private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	private static SimpleDateFormat sdf  = new SimpleDateFormat("yyyy-MM-dd");
 	private static SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
 
 	// 根据生日计算年龄
