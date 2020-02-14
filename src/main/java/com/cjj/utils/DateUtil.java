@@ -14,6 +14,7 @@ import java.util.Date;
 public class DateUtil {
 
 	private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	private static SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
 
 	// 根据生日计算年龄
 	public static int getAgeByBirthday(Date birthday) {
@@ -126,4 +127,17 @@ public class DateUtil {
 		return null;
 	}
 
+	// 获得指定时间之前的时间 例如 获得两小时前的时间 ms
+	public static String getIntervalDate(long millis) {
+		// 获得系统当前时间的毫秒
+		Date date = new Date();
+		long time1 = date.getTime();
+
+		// 获得需要得到的时间的毫秒
+		long time = time1 - millis;
+		// 通过获得的毫秒得到时间
+		date.setTime(time);
+		String format = sdf2.format(date);
+		return format;
+	}
 }
