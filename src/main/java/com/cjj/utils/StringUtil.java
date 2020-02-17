@@ -57,4 +57,10 @@ public class StringUtil {
 		boolean matches = str.matches(reg_str);
 		return matches;
 	}
+	
+	// 判断传入的字符串是否为包含http的url地址
+	public static boolean isHttpUrl(String src){
+		return src.startsWith("http");
+	}
+
 }
